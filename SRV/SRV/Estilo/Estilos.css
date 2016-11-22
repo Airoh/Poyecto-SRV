@@ -1,0 +1,26 @@
+﻿body {
+}
+
+.fondoazul {
+    background-color: blue;
+    color: white;
+}
+
+.separacion {
+    /*height: 15px;*/
+    height: 500px;
+}
+
+.btnTam {
+    font-weight: bold;
+    width: 250px;
+}
+
+.modal-dialog {
+    left: auto;
+    right: auto;
+}
+
+input, select, textarea {
+       max-width: none;
+}

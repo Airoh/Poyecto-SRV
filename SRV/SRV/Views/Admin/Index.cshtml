@@ -1,0 +1,539 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    &nbsp;
+</div>
+<div class="col-lg-12 text-right">Hora: 12:30:05</div><br>
+<div class="col-lg-12 text-right"><a>Cerrar Sesion</a></div><br>
+<div class="col-md-4"><br></div>
+<div class="col-sm-12 text-rigt "><h1>Bienvenido, <spam>Hairo</spam></h1></div>
+<div class="row">&nbsp;</div>
+
+<div class="container">
+    <div class="text-center"><h2>Panel decontrol</h2></div>
+    <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#home">Carga y Eliminacion de informacion</a></li>
+        <li><a data-toggle="pill" href="#menu1">Administrar Roles</a></li>
+        <li><a data-toggle="pill" href="#menu2">administrar Usuarios</a></li>
+        <li><a data-toggle="pill" href="#menu3">Cursos</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h4>
+                Carga de cursos
+            </h4>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-4"><br></div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Ruta del archivo:
+                        </div>
+                        <div class="col-sm-4 text-left">
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                    <span class="btn btn-primary">
+                                        Browse&hellip; <input type="file" style="display: none;" multiple>
+                                    </span>
+                                </label>
+                                <input type="text" class="form-control" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Año:
+                        </div>
+                        <div class="dropdown col-sm-4 text-left">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Seleccione el año
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Mes:
+                        </div>
+                        <div class="dropdown col-sm-4 text-left">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Seleccione el mes
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div><div class="col-sm-11"><h4><u>Vista Previa</u></h4></div>
+                    <div class="col-sm-1"></div>
+                    <div class="container col-sm-10">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Cod. Curso</th>
+                                    <th>Nombre del Curso</th>
+                                    <th>Sección</th>
+                                    <th>Catedrático</th>
+                                    <th>Número de asignados</th>
+                                    <th>Evaluado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <h4>
+                Eliminación de cursos
+            </h4>
+            <div class="panel panel-default">
+                <div class="panel-body text-center">
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-2 text-right">
+                            Año:
+                        </div>
+                        <div class="dropdown col-sm-2 text-left">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Seleccione el año
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 text-right"></div>
+                        <div class="col-sm-2 text-right">
+                            Mes:
+                        </div>
+                        <div class="dropdown col-sm-2 text-left">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Seleccione el mes
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-center"><button class="btn btnTam">Eliminar información</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h4>Agregar Usuario</h4>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-4"><br></div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Usuario:
+                        </div>
+                        <div class="col-sm-3 text-left">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Nombre del usuario:
+                        </div>
+                        <div class="col-sm-3 text-left">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Email:
+                        </div>
+                        <div class="col-sm-3 text-left">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Teléfono:
+                        </div>
+                        <div class="col-sm-3 text-left">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Tipo de usuario:
+                        </div>
+                        <div class="dropdown col-sm-6 text-left">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:240px;">
+                                Seleccione el tipo de usuario
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-6 text-right">
+                            Rol:
+                        </div>
+                        <div class="dropdown col-sm-4 text-left">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:240px;">
+                                Seleccione el rol
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center"><button class="btn btnTam">Agregar Usuario</button></div>
+                </div>
+
+            </div>
+
+            <h4>Listar Usuarios</h4>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-sm-12 text-center">
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <button class="btn ">Cambiar Rol</button>
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <button class="btn ">Cambiar Estado</button>
+                        </div>
+                        <div class="col-sm-4 text-center"></div>
+                        <div class="col-sm-2 text-center">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <button class="btn ">Buscar Usuario</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="container col-sm-10">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="state" data-radio="true"></th>
+                                    <th>Usuario</th>
+                                    <th>Nombre del usuario</th>
+                                    <th>Email</th>
+                                    <th>Telefono</th>
+                                    <th>Tipo de usuario</th>
+                                    <th>Rol</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-index="0" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>Usuario1</td>
+                                    <td>Usuario1</td>
+                                    <td>usuario1@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>Administrativo</td>
+                                    <td>Admin</td>
+                                    <td>Activo</td>
+                                </tr>
+                                <tr data-index="1" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>Usuario1</td>
+                                    <td>Usuario1</td>
+                                    <td>usuario1@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>Administrativo</td>
+                                    <td>Admin</td>
+                                    <td>Activo</td>
+                                </tr>
+                                <tr data-index="2" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>Usuario1</td>
+                                    <td>Usuario1</td>
+                                    <td>usuario1@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>Administrativo</td>
+                                    <td>Admin</td>
+                                    <td>Activo</td>
+                                </tr>
+                                <tr data-index="3" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>Usuario1</td>
+                                    <td>Usuario1</td>
+                                    <td>usuario1@gmail.com</td>
+                                    <td>12345678</td>
+                                    <td>Administrativo</td>
+                                    <td>Admin</td>
+                                    <td>Activo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <h4>Listar Usuarios</h4>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <div class="col-sm-12 text-center">
+                            <div class="col-sm-1 text-right">
+                                Mes:
+                            </div>
+                            <div class="dropdown col-sm-11 text-left">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:240px;">
+                                    Seleccione el mes
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="col-sm-12 text-center">
+                            <div class="col-sm-1 text-right">
+                                Año:
+                            </div>
+                            <div class="dropdown col-sm-7 text-left">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width:240px;">
+                                    Seleccione el año
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <button class="btn ">Cambiar Estado - Evaluado</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="container col-sm-10">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="state" data-radio="true"></th>
+                                    <th>Cod. Curso</th>
+                                    <th>Nombre del Curso</th>
+                                    <th>Sección</th>
+                                    <th>Catedrático</th>
+                                    <th>Número de asignados</th>
+                                    <th>Número de evaluaciones</th>
+                                    <th>Evaluado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-index="0" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>20</td>
+                                    <td>Si</td>
+                                </tr>
+                                <tr data-index="1" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>20</td>
+                                    <td>Si</td>
+                                </tr>
+                                <tr data-index="2" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>0</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr data-index="3" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>0</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr data-index="4" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>0</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr data-index="5" class="text-center">
+                                    <td class="bs-checkbox "><input data-index="0" name="myRadioName" type="radio"></td>
+                                    <td>001</td>
+                                    <td>Curso 1</td>
+                                    <td>A</td>
+                                    <td>Catedrático 1</td>
+                                    <td>41</td>
+                                    <td>0</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

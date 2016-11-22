@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    &nbsp;
+</div>
+<div class="col-md-12"><a id="ISesion"> ¿Eres catedr&aacute;tico o del personal administrativo?, inicia Sesi&oacute;n aqu&iacute;</a></div>
+<br>
+<div class="col-md-12 separacion"></br></div>
+<div class="col-sm-12 text-center"><h1>Sistema de Ranking Vacacional</h1></div>
+<div class="row">&nbsp;</div>
+<div class="col-sm-12 text-center"><h2>SRV</h2></div>
+<div class="col-md-4"></br></div>
+<div class="col-sm-12 text-center"><button class="btn btnTam">Evaluar</button></div>
+<div class="col-md-4"></br></div>
+<div class="col-sm-12 text-center"><button class="btn btnTam">Reporte por semestre</button></div>
+<div class="col-md-4"></br></div>
+<div class="col-sm-12 text-center"><button class="btn btnTam">Reporte por catedr&aacute;tico</button></div>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalISesion" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> USuario:</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Ingrea tu usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+                        <input type="text" class="form-control" id="psw" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div Class="text-center">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Catedr&aacute;tico</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Personal adninistrativo</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                @*<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>*@
+            </div>
+        </div>
+    </div>
+</div>
